@@ -19,6 +19,7 @@ public class Disciplina {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ElementCollection
     private List<String> professores;
 
     @Column(unique = true)
@@ -26,8 +27,10 @@ public class Disciplina {
 
     private String descricao;
 
+    @ElementCollection
     private List<String> trabalhos;
 
+    @ElementCollection
     private List<String> provas;
 
 
