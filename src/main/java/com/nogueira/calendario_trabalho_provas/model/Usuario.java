@@ -1,9 +1,7 @@
 package com.nogueira.calendario_trabalho_provas.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
@@ -11,8 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "usuarios")
 public class Usuario {
-
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
